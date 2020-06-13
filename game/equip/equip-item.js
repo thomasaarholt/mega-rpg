@@ -9,7 +9,7 @@ const equipItem = async (user, item) => {
 	const currentItem = allItems[user.hero.armor[item.typeSequence[item.typeSequence.length - 1]]];
 	await user.equipItem(item, currentItem);
 
-	return `${item.name} was successfully equiped`;
+	return `${item.name} was successfully equipped`;
 };
 
 const checkIfItemCanBeEquiped = (user, item) => {
